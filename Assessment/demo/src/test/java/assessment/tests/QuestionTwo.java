@@ -10,11 +10,11 @@ public class QuestionTwo
 {
      WebDriver driver;
      
-
     @BeforeTest
     public void initialize() throws InterruptedException
     {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Malmi\\Desktop\\Assessment\\demo\\src\\test\\resources\\drivers\\chromedriver.exe");
+        String homeDirectory ="user.dir";
+        System.setProperty("webdriver.chrome.driver", System.getProperty(homeDirectory)+"/src/test/resources/drivers/chromedriver.exe");
         driver=new ChromeDriver();
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
         driver.manage().window().maximize();
