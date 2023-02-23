@@ -1,4 +1,4 @@
-How to run the test cases:
+How to run test cases:
 
 Step 1: Clone the project 
 Step 2: Open project in Visual Studio Code and install java extension pack
